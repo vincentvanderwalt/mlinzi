@@ -35,7 +35,7 @@ jobs:
         with:
           # Additional arguments to the sonarcloud scanner
           args: >
-            -Dsonar.organization=${{ secrets.SONAR_ORGANIZATION }}
+            -Dsonar.organization='${{ secrets.SONAR_ORGANIZATION }}'
             -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
           # Set the sonar.projectBaseDir analysis property
           projectBaseDir: . # optional, default is .
